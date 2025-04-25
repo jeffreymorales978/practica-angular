@@ -1,0 +1,21 @@
+<div class="row mt-2 mb-2">
+  <div class="col-12">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item "
+        [ngClass]="{'disable': !previousURl}">
+          <a class="page-link"
+          (click)="loadPokemons(previousURl!)"
+          >Atras</a>
+        </li>
+
+        <li class="page-item"
+        [ngClass]="{'disable': !nextURl}">
+          <a class="page-link" 
+          (click)="loadPokemons(nextURl!)"
+          >Siguiente</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
