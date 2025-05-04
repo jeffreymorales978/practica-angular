@@ -1,0 +1,11 @@
+<app-pag/>
+
+<div class="container">
+    <!-- Componente de búsqueda -->
+    <app-search (search)="searchProducts($event)"></app-search>
+
+    <app-card [productsAll]="products"></app-card>
+</div>
+
+<app-pag/>
+

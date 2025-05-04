@@ -1,35 +1,39 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Mi aplicacion angular</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#" routerLink="dbz" routerLinkActive="active">API DBZ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" routerLink="pokemon" routerLinkActive="active">Api de pokemon</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" routerLink="cocteles" routerLinkActive="active">Api de Cocteles</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mi Api
-            </a>
-            <ul class="dropdown-menu">
-              
-              <li><a class="dropdown-item" href="#" routerLink="miapi/list" routerLinkActive="active">Lista</a></li>
-              
-            </ul>
-          </li>
-         
-        </ul>
-        
-      </div>
+
+  <link rel="stylesheet" href="./navbar.component.css">
+
+
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#">APIs Jeffrey</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="pokemon" routerLinkActive="active"><i class="far fa-clone"></i>Pokedex API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="cocteles" routerLinkActive="active"><i class="far fa-clone"></i>Cocteles API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="fakestore" routerLinkActive="active"><i class="far fa-clone"></i>Fake Store API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="dbz" routerLinkActive="active"><i class="far fa-clone"></i>DBZ API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="miapi" routerLinkActive="active"><i class="far fa-clone"></i>Mi API</a>
+        </li>
+      </ul>
     </div>
   </nav>
+  <script src="./navbar.component.js"></script>
 
   
